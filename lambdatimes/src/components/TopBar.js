@@ -66,13 +66,13 @@ const CenterContainer = styled.div`
     cursor: pointer;
     margin-right: 5%;
 
+    :hover {
+      text-decoration: underline;
+    }
+
     :last-child {
       margin-right: 0;
     }
-  }
-
-  :hover {
-    text-decoration: underline;
   }
 `;
 
