@@ -32,6 +32,10 @@ const RightContainer = styled.div`
   flex: 1;
   font-size: 11px;
   font-weight: bold;
+
+  span {
+    cursor: pointer;
+  }
 `;
 
 const LeftContainer = styled.div`
@@ -41,6 +45,12 @@ const LeftContainer = styled.div`
   flex-direction: row;
   flex: 1;
   font-size: 11px;
+
+  span {
+    cursor: pointer;
+    margin-right: 25%;
+    font-weight: bold;
+  }
 `;
 
 
@@ -51,6 +61,19 @@ const CenterContainer = styled.div`
   flex-direction: row;
   flex: 3;
   font-size: 9px;
+
+  span {
+    cursor: pointer;
+    margin-right: 5%;
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+
+  :hover {
+    text-decoration: underline;
+  }
 `;
 
 const TopBar = () => {

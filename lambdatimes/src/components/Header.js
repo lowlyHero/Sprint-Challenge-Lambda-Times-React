@@ -13,6 +13,13 @@ const HeaderDiv = styled.div`
   height: 120px;
   margin-top: 44px;
   padding-bottom: 15px;
+
+  span {
+    align-self: flex-end;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
 `;
 
 const Title = styled.h1`
