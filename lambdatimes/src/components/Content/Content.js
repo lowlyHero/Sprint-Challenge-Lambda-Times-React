@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 import Tabs from './Tabs';
@@ -17,7 +18,7 @@ export default class Content extends Component {
   }
 
   componentDidMount() {
-    // Once the component has mounted, get the data and reflect that data on the state.
+    this.setState({ tabs: tabData, cards: cardData })
   }
 
   changeSelected = tab => {
@@ -37,6 +38,12 @@ export default class Content extends Component {
           of the items from cardData. 
         - else, it should only return those cards whose 'tab' matched this.state.selected.
     */
+
+    if(this.cardData == 'all'){
+      this.cards = document.querySelectorAll('.card');
+    } else {
+      this.cards = document.querySelectorAll(`.card[data-tab='${this.cards}']`);
+
     return this.state.cards;
   };
 
